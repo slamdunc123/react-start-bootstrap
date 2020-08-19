@@ -1,26 +1,198 @@
 import React from 'react';
-import logo from './logo.svg';
+import Navbar from './components/Navbar';
+import Portfolio from './components/Portfolio';
+import RoutingTest from './components/RoutingTest';
+import Services from './components/Services';
+import About from './components/About';
+import Team from './components/Team';
+import Contact from './components/Contact';
 import './App.css';
+import { Link } from 'react-scroll';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const portfolioLinks = [
+		{
+			title: 'Threads',
+			caption: 'Illustration',
+		},
+		{
+			title: 'Explore',
+			caption: 'Graphic Design',
+		},
+		{
+			title: 'Finish',
+			caption: 'Identity',
+		},
+		{
+			title: 'Lines',
+			caption: 'Branding',
+		},
+		{
+			title: 'Southwest',
+			caption: 'Website Design',
+		},
+		{
+			title: 'Window',
+			caption: 'Photography',
+		},
+		{
+			title: 'Pizza',
+			caption: 'I love pizza!',
+		},
+	];
+
+	return (
+		<div className='App'>
+			<Navbar />
+			<header className='masthead' id='page-top'>
+				<div className='container'>
+					<div className='masthead-subheading'>
+						Welcome To Our Studio!
+					</div>
+					<div className='masthead-heading text-uppercase'>
+						It's Nice To Meet You
+					</div>
+					<Link
+						activeClass='active'
+						to='services'
+						spy={true}
+						smooth={true}
+						duration={1000}
+						className='btn btn-primary btn-xl text-uppercase js-scroll-trigger'
+						// href='#services'
+					>
+						Tell Me More
+					</Link>
+				</div>
+			</header>
+			<RoutingTest />
+			<Services />
+			<Portfolio portfolioLinks={portfolioLinks} />
+			<About />
+			<Team />
+			<Contact />
+
+			<div className='py-5'>
+				<div className='container'>
+					<div className='row'>
+						<div className='col-md-3 col-sm-6 my-3'>
+							<a href='#!'>
+								<img
+									className='img-fluid d-block mx-auto'
+									src={require('./assets/img/logos/envato.jpg')}
+									alt=''
+								/>
+							</a>
+						</div>
+						<div className='col-md-3 col-sm-6 my-3'>
+							<a href='#!'>
+								<img
+									className='img-fluid d-block mx-auto'
+									src={require('./assets/img/logos/designmodo.jpg')}
+									alt=''
+								/>
+							</a>
+						</div>
+						<div className='col-md-3 col-sm-6 my-3'>
+							<a href='#!'>
+								<img
+									className='img-fluid d-block mx-auto'
+									src={require('./assets/img/logos/themeforest.jpg')}
+									alt=''
+								/>
+							</a>
+						</div>
+						<div className='col-md-3 col-sm-6 my-3'>
+							<a href='#!'>
+								<img
+									className='img-fluid d-block mx-auto'
+									src={require('./assets/img/logos/creative-market.jpg')}
+									alt=''
+								/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className='py-5'>
+				<div className='container'>
+					<div className='row'>
+						<div className='col-md-3 col-sm-6 my-3'>
+							<a href='#!'>
+								<img
+									className='img-fluid d-block mx-auto'
+									src={require('./assets/img/logos/envato.jpg')}
+									alt=''
+								/>
+							</a>
+						</div>
+						<div className='col-md-3 col-sm-6 my-3'>
+							<a href='#!'>
+								<img
+									className='img-fluid d-block mx-auto'
+									src={require('./assets/img/logos/designmodo.jpg')}
+									alt=''
+								/>
+							</a>
+						</div>
+						<div className='col-md-3 col-sm-6 my-3'>
+							<a href='#!'>
+								<img
+									className='img-fluid d-block mx-auto'
+									src={require('./assets/img/logos/themeforest.jpg')}
+									alt=''
+								/>
+							</a>
+						</div>
+						<div className='col-md-3 col-sm-6 my-3'>
+							<a href='#!'>
+								<img
+									className='img-fluid d-block mx-auto'
+									src={require('./assets/img/logos/creative-market.jpg')}
+									alt=''
+								/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer className='footer py-4'>
+				<div className='container'>
+					<div className='row align-items-center'>
+						<div className='col-lg-4 text-lg-left'>
+							Copyright © Your Website 2020
+						</div>
+						<div className='col-lg-4 my-3 my-lg-0'>
+							<a
+								className='btn btn-dark btn-social mx-2'
+								href='#!'
+							>
+								<i className='fa fa-twitter'></i>
+							</a>
+							<a
+								className='btn btn-dark btn-social mx-2'
+								href='#!'
+							>
+								<i className='fa fa-facebook-f'></i>
+							</a>
+							<a
+								className='btn btn-dark btn-social mx-2'
+								href='#!'
+							>
+								<i className='fa fa-linkedin-in'></i>
+							</a>
+						</div>
+						<div className='col-lg-4 text-lg-right'>
+							<a className='mr-3' href='#!'>
+								Privacy Policy
+							</a>
+							<a href='#!'>Terms of Use</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	);
 }
 
 export default App;
