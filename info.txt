@@ -1,0 +1,24 @@
+resources
+
+https://www.youtube.com/watch?v=RcfvUWJqHOs
+https://startbootstrap.com/themes/agency/
+
+npm installs
+
+react-scroll
+react-animate-on-scroll
+animate.css
+react-router-dom
+
+index.html
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+
+index.js
+
+import './assets/css/bootstrap.css';
+import 'animate.css/animate.min.css';
+
+App.js
+
+import { Link } from 'react-scroll';
