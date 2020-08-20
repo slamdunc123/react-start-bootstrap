@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Services = () => {
 	return (
@@ -12,10 +13,16 @@ const Services = () => {
 				</div>
 				<div className='row text-center'>
 					<div className='col-md-4'>
-						<span className='fa-stack fa-4x'>
-							<i className='fa fa-circle fa-stack-2x text-primary'></i>
-							<i className='fa fa-shopping-cart fa-stack-1x fa-inverse'></i>
-						</span>
+						<ScrollAnimation
+							animateIn='zoomIn'
+							delay={0}
+							animateOnce
+						>
+							<span className='fa-stack fa-4x'>
+								<i className='fa fa-circle fa-stack-2x text-primary'></i>
+								<i className='fa fa-shopping-cart fa-stack-1x fa-inverse'></i>
+							</span>
+						</ScrollAnimation>
 						<h4 className='my-3'>E-Commerce</h4>
 						<p className='text-muted'>
 							Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -24,10 +31,16 @@ const Services = () => {
 						</p>
 					</div>
 					<div className='col-md-4'>
-						<span className='fa-stack fa-4x'>
-							<i className='fa fa-circle fa-stack-2x text-primary'></i>
-							<i className='fa fa-laptop fa-stack-1x fa-inverse'></i>
-						</span>
+						<ScrollAnimation
+							animateIn='zoomIn'
+							delay={100}
+							animateOnce
+						>
+							<span className='fa-stack fa-4x'>
+								<i className='fa fa-circle fa-stack-2x text-primary'></i>
+								<i className='fa fa-laptop fa-stack-1x fa-inverse'></i>
+							</span>
+						</ScrollAnimation>
 						<h4 className='my-3'>Responsive Design</h4>
 						<p className='text-muted'>
 							Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -36,10 +49,16 @@ const Services = () => {
 						</p>
 					</div>
 					<div className='col-md-4'>
-						<span className='fa-stack fa-4x'>
-							<i className='fa fa-circle fa-stack-2x text-primary'></i>
-							<i className='fa fa-lock fa-stack-1x fa-inverse'></i>
-						</span>
+						<ScrollAnimation
+							animateIn='zoomIn'
+							delay={200}
+							animateOnce
+						>
+							<span className='fa-stack fa-4x'>
+								<i className='fa fa-circle fa-stack-2x text-primary'></i>
+								<i className='fa fa-lock fa-stack-1x fa-inverse'></i>
+							</span>
+						</ScrollAnimation>
 						<h4 className='my-3'>Web Security</h4>
 						<p className='text-muted'>
 							Lorem ipsum dolor sit amet, consectetur adipisicing

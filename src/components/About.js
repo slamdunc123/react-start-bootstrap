@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const About = () => {
 	return (
@@ -12,13 +13,19 @@ const About = () => {
 				</div>
 				<ul className='timeline'>
 					<li>
-						<div className='timeline-image'>
-							<img
-								className='rounded-circle img-fluid'
-								src={require('../assets/img/about/1.jpg')}
-								alt=''
-							/>
-						</div>
+						<ScrollAnimation
+							animateIn='pulse'
+							delay={200}
+							animateOnce
+						>
+							<div className='timeline-image'>
+								<img
+									className='rounded-circle img-fluid'
+									src={require('../assets/img/about/1.jpg')}
+									alt=''
+								/>
+							</div>
+						</ScrollAnimation>
 						<div className='timeline-panel'>
 							<div className='timeline-heading'>
 								<h4>2009-2011</h4>
@@ -39,13 +46,19 @@ const About = () => {
 						</div>
 					</li>
 					<li className='timeline-inverted'>
-						<div className='timeline-image'>
-							<img
-								className='rounded-circle img-fluid'
-								src={require('../assets/img/about/2.jpg')}
-								alt=''
-							/>
-						</div>
+						<ScrollAnimation
+							animateIn='pulse'
+							delay={200}
+							animateOnce
+						>
+							<div className='timeline-image'>
+								<img
+									className='rounded-circle img-fluid'
+									src={require('../assets/img/about/2.jpg')}
+									alt=''
+								/>
+							</div>
+						</ScrollAnimation>
 						<div className='timeline-panel'>
 							<div className='timeline-heading'>
 								<h4>March 2011</h4>
@@ -66,13 +79,19 @@ const About = () => {
 						</div>
 					</li>
 					<li>
-						<div className='timeline-image'>
-							<img
-								className='rounded-circle img-fluid'
-								src={require('../assets/img/about/3.jpg')}
-								alt=''
-							/>
-						</div>
+						<ScrollAnimation
+							animateIn='pulse'
+							delay={200}
+							animateOnce
+						>
+							<div className='timeline-image'>
+								<img
+									className='rounded-circle img-fluid'
+									src={require('../assets/img/about/3.jpg')}
+									alt=''
+								/>
+							</div>
+						</ScrollAnimation>
 						<div className='timeline-panel'>
 							<div className='timeline-heading'>
 								<h4>December 2012</h4>
@@ -93,13 +112,19 @@ const About = () => {
 						</div>
 					</li>
 					<li className='timeline-inverted'>
-						<div className='timeline-image'>
-							<img
-								className='rounded-circle img-fluid'
-								src={require('../assets/img/about/4.jpg')}
-								alt=''
-							/>
-						</div>
+						<ScrollAnimation
+							animateIn='pulse'
+							delay={200}
+							animateOnce
+						>
+							<div className='timeline-image'>
+								<img
+									className='rounded-circle img-fluid'
+									src={require('../assets/img/about/4.jpg')}
+									alt=''
+								/>
+							</div>
+						</ScrollAnimation>
 						<div className='timeline-panel'>
 							<div className='timeline-heading'>
 								<h4>July 2014</h4>
@@ -120,15 +145,21 @@ const About = () => {
 						</div>
 					</li>
 					<li className='timeline-inverted'>
-						<div className='timeline-image'>
-							<h4>
-								Be Part
-								<br />
-								Of Our
-								<br />
-								Story!
-							</h4>
-						</div>
+						<ScrollAnimation
+							animateIn='pulse'
+							delay={200}
+							animateOnce
+						>
+							<div className='timeline-image'>
+								<h4>
+									Be Part
+									<br />
+									Of Our
+									<br />
+									Story!
+								</h4>
+							</div>
+						</ScrollAnimation>
 					</li>
 				</ul>
 			</div>

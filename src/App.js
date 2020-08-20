@@ -179,7 +179,7 @@ function App() {
 								className='btn btn-dark btn-social mx-2'
 								href='#!'
 							>
-								<i className='fa fa-linkedin-in'></i>
+								<i className='fa fa-linkedin'></i>
 							</a>
 						</div>
 						<div className='col-lg-4 text-lg-right'>

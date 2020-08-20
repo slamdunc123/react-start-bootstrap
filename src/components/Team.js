@@ -15,7 +15,11 @@ const Team = () => {
 				</div>
 				<div className='row'>
 					<div className='col-lg-4'>
-						<ScrollAnimation animateIn='fadeInLeft' delay={250}>
+						<ScrollAnimation
+							animateIn='fadeInLeft'
+							delay={50}
+							animateOnce
+						>
 							<div className='team-member'>
 								<img
 									className='mx-auto rounded-circle'
@@ -40,13 +44,17 @@ const Team = () => {
 									className='btn btn-dark btn-social mx-2'
 									href='#!'
 								>
-									<i className='fa fa-linkedin-in'></i>
+									<i className='fa fa-linkedin'></i>
 								</a>
 							</div>
 						</ScrollAnimation>
 					</div>
 					<div className='col-lg-4'>
-						<ScrollAnimation animateIn='zoomIn' delay={250}>
+						<ScrollAnimation
+							animateIn='zoomIn'
+							delay={50}
+							animateOnce
+						>
 							<div className='team-member'>
 								<img
 									className='mx-auto rounded-circle'
@@ -71,14 +79,18 @@ const Team = () => {
 									className='btn btn-dark btn-social mx-2'
 									href='#!'
 								>
-									<i className='fa fa-linkedin-in'></i>
+									<i className='fa fa-linkedin'></i>
 								</a>
 							</div>
 						</ScrollAnimation>
 					</div>
 
 					<div className='col-lg-4'>
-						<ScrollAnimation animateIn='fadeInRight' delay={250}>
+						<ScrollAnimation
+							animateIn='fadeInRight'
+							delay={50}
+							animateOnce
+						>
 							<div className='team-member'>
 								<img
 									className='mx-auto rounded-circle'
@@ -103,7 +115,7 @@ const Team = () => {
 									className='btn btn-dark btn-social mx-2'
 									href='#!'
 								>
-									<i className='fa fa-linkedin-in'></i>
+									<i className='fa fa-linkedin'></i>
 								</a>
 							</div>
 						</ScrollAnimation>
