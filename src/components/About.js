@@ -14,7 +14,7 @@ const About = () => {
 				<ul className='timeline'>
 					<li>
 						<ScrollAnimation
-							animateIn='pulse'
+							animateIn='fadeIn'
 							delay={200}
 							animateOnce
 						>
@@ -47,7 +47,7 @@ const About = () => {
 					</li>
 					<li className='timeline-inverted'>
 						<ScrollAnimation
-							animateIn='pulse'
+							animateIn='fadeIn'
 							delay={200}
 							animateOnce
 						>
@@ -80,7 +80,7 @@ const About = () => {
 					</li>
 					<li>
 						<ScrollAnimation
-							animateIn='pulse'
+							animateIn='fadeIn'
 							delay={200}
 							animateOnce
 						>
@@ -113,7 +113,7 @@ const About = () => {
 					</li>
 					<li className='timeline-inverted'>
 						<ScrollAnimation
-							animateIn='pulse'
+							animateIn='fadeIn'
 							delay={200}
 							animateOnce
 						>
@@ -146,7 +146,7 @@ const About = () => {
 					</li>
 					<li className='timeline-inverted'>
 						<ScrollAnimation
-							animateIn='pulse'
+							animateIn='fadeIn'
 							delay={200}
 							animateOnce
 						>

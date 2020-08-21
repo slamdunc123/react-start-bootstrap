@@ -5,19 +5,19 @@ https://startbootstrap.com/themes/agency/
 
 npm installs
 
-react-scroll
+react-scroll (has scrollspy functionality)
 react-animate-on-scroll
 animate.css
 react-router-dom
 
 index.html
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" /> (need this for react-animate-on-scroll)
 
 index.js
 
 import './assets/css/bootstrap.css';
-import 'animate.css/animate.min.css';
+import 'animate.css/animate.min.css'; (need this for react-animate-on-scroll)
 
 App.js
 
