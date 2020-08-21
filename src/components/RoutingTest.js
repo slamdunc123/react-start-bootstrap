@@ -8,7 +8,7 @@ const RoutingTest = () => {
 			<div className='container'>
 				<h2>Routing Test</h2>
 
-				<Router>
+				<Router basename={'/react-sites/react-start-bootstrap/'}>
 					<Link to='/route1'>Route1</Link>
 					<Link to='/route2'>Route2</Link>
 					<Routes />
