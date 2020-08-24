@@ -22,3 +22,27 @@ import 'animate.css/animate.min.css'; (need this for react-animate-on-scroll)
 App.js
 
 import { Link } from 'react-scroll';
+
+
+
+DEPLOYMENT
+
+package.json
+add homepage
+"homepage": "http://slamdunc.co.uk/react-sites/react-start-bootstrap",
+
+basename
+add to Router
+<Router basename={'/react-sites/react-start-bootstrap'}>
+
+.htaccess
+add file with following example content to site root directory
+
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+ RewriteCond %{REQUEST_FILENAME} !-f
+ RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /react-sites/react-start-bootstrap/index.html [L]
+
+ErrorDocument 404 http://slamdunc.co.uk/react-sites/react-start-bootstrap/
+ErrorDocument 403 http://slamdunc.co.uk/react-sites/react-start-bootstrap/
