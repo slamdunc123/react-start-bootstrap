@@ -1,13 +1,14 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Portfolio from './components/Portfolio';
-import RoutingTest from './components/RoutingTest';
+import Analytics from './components/Analytics';
 import Services from './components/Services';
 import About from './components/About';
 import Team from './components/Team';
 import Contact from './components/Contact';
 import './App.css';
 import { Link } from 'react-scroll';
+import Pricing from './components/Pricing';
 
 function App() {
 	const portfolioLinks = [
@@ -65,7 +66,8 @@ function App() {
 					</Link>
 				</div>
 			</header>
-			<RoutingTest />
+			<Analytics />
+			<Pricing />
 			<Services />
 			<Portfolio portfolioLinks={portfolioLinks} />
 			<About />

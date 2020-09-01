@@ -77,7 +77,7 @@ const Navbar = () => {
 						<li className='nav-item'>
 							<Link
 								activeClass='active'
-								to='routing-test'
+								to='analytics'
 								spy={true}
 								smooth={true}
 								duration={1000}
@@ -85,7 +85,21 @@ const Navbar = () => {
 								type='button'
 								onClick={handleBurgerMenu}
 							>
-								Routing
+								Analytics
+							</Link>
+						</li>
+						<li className='nav-item'>
+							<Link
+								activeClass='active'
+								to='pricing'
+								spy={true}
+								smooth={true}
+								duration={1000}
+								className='nav-link js-scroll-trigger'
+								type='button'
+								onClick={handleBurgerMenu}
+							>
+								Pricing
 							</Link>
 						</li>
 						<li className='nav-item'>

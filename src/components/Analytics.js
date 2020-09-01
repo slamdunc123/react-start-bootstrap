@@ -2,11 +2,18 @@ import React from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Routes from '../Routes';
 
-const RoutingTest = () => {
+const Analytics = () => {
 	return (
-		<section className='page-section bg-light' id='routing-test'>
+		<section className='page-section' id='analytics'>
 			<div className='container'>
-				<h2>Routing Test</h2>
+				<div className='text-center'>
+					<h2 className='section-heading text-uppercase'>
+						Analytics
+					</h2>
+					<h3 className='section-subheading text-muted'>
+						Lorem ipsum dolor sit amet consectetur.
+					</h3>
+				</div>
 
 				<Router basename={'/react-sites/react-start-bootstrap'}>
 					<Link to='/route1'>Route1</Link>
@@ -18,4 +25,4 @@ const RoutingTest = () => {
 	);
 };
 
-export default RoutingTest;
+export default Analytics;
