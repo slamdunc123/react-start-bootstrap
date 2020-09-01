@@ -6,9 +6,10 @@ import Services from './components/Services';
 import About from './components/About';
 import Team from './components/Team';
 import Contact from './components/Contact';
+import Pricing from './components/Pricing';
+import Promo from './components/Promo';
 import './App.css';
 import { Link } from 'react-scroll';
-import Pricing from './components/Pricing';
 
 function App() {
 	const portfolioLinks = [
@@ -66,6 +67,7 @@ function App() {
 					</Link>
 				</div>
 			</header>
+			<Promo />
 			<Analytics />
 			<Pricing />
 			<Services />

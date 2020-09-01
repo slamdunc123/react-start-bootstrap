@@ -77,6 +77,20 @@ const Navbar = () => {
 						<li className='nav-item'>
 							<Link
 								activeClass='active'
+								to='promo'
+								spy={true}
+								smooth={true}
+								duration={1000}
+								className='nav-link js-scroll-trigger'
+								type='button'
+								onClick={handleBurgerMenu}
+							>
+								Promo
+							</Link>
+						</li>
+						<li className='nav-item'>
+							<Link
+								activeClass='active'
 								to='analytics'
 								spy={true}
 								smooth={true}

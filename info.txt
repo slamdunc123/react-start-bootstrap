@@ -9,6 +9,8 @@ react-scroll (has scrollspy functionality)
 react-animate-on-scroll
 animate.css
 react-router-dom
+react-chartjs-2 chart.js
+
 
 index.html
 

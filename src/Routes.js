@@ -1,22 +1,22 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import Route1 from './components/Route1';
-import Route2 from './components/Route2';
+import ChartDoughnut from './components/ChartDoughnut';
+import ChartBar from './components/ChartBar';
 
 const Routes = () => {
 	return (
 		<Switch>
 			<Route exact path='/'>
-				<Route1 />
+				<ChartDoughnut />
 			</Route>
-			<Route exact path='/route1'>
-				<Route1 />
+			<Route exact path='/doughnut'>
+				<ChartDoughnut />
 			</Route>
-			<Route exact path='/route2'>
-				<Route2 />
+			<Route exact path='/barchart'>
+				<ChartBar />
 			</Route>
-			<Route render={() => <Redirect to='/route1' />} />
-			{/* <Route component={Route1} /> */}
+			<Route render={() => <Redirect to='/doughnut' />} />
+			{/* <Route component={ChartDoughnut} /> */}
 		</Switch>
 	);
 };

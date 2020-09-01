@@ -16,8 +16,20 @@ const Analytics = () => {
 				</div>
 
 				<Router basename={'/react-sites/react-start-bootstrap'}>
-					<Link to='/route1'>Route1</Link>
-					<Link to='/route2'>Route2</Link>
+					<div className='mb-4'>
+						<Link
+							to='/doughnut'
+							className='btn btn-warning btn-sm mx-1'
+						>
+							Doughnut
+						</Link>
+						<Link
+							to='/barchart'
+							className='btn btn-warning btn-sm mx-1'
+						>
+							Barchart
+						</Link>
+					</div>
 					<Routes />
 				</Router>
 			</div>
