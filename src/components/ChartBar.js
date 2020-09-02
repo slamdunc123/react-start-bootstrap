@@ -25,16 +25,12 @@ const ChartBar = () => {
 		],
 	};
 	return (
-		<div>
-			<Bar
-				data={data}
-				width={100}
-				height={400}
-				options={{
-					maintainAspectRatio: false,
-				}}
-			/>
-		</div>
+		<Bar
+			data={data}
+			options={{
+				maintainAspectRatio: false,
+			}}
+		/>
 	);
 };
 

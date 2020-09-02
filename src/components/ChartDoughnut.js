@@ -12,11 +12,7 @@ const ChartDoughnut = () => {
 			},
 		],
 	};
-	return (
-		<div>
-			<Doughnut data={data} />
-		</div>
-	);
+	return <Doughnut data={data} />;
 };
 
 export default ChartDoughnut;
