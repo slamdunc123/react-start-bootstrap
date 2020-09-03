@@ -29,6 +29,18 @@ const Analytics = () => {
 						>
 							Barchart
 						</Link>
+						<Link
+							to='/linechart'
+							className='btn btn-warning btn-sm mx-1'
+						>
+							Linechart
+						</Link>
+						<Link
+							to='/radarchart'
+							className='btn btn-warning btn-sm mx-1'
+						>
+							Radarchart
+						</Link>
 					</div>
 					<Routes />
 				</Router>
