@@ -30,7 +30,8 @@ import { Link } from 'react-scroll';
 DEPLOYMENT
 
 package.json
-add homepage
+add homepage entry only if hosting on shared eg site5
+remove if hosting on AWS Amplify
 "homepage": "http://slamdunc.co.uk/react-sites/react-start-bootstrap",
 
 basename
