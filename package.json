@@ -1,6 +1,5 @@
 {
 	"name": "react-start-bootstrap",
-	"homepage": "http://slamdunc.co.uk/react-sites/react-start-bootstrap",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
