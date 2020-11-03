@@ -36,6 +36,8 @@ remove if hosting on AWS Amplify
 
 basename
 add to Router
+add basename entry only if hosting on shared eg site5
+remove if hosting on AWS Amplify
 <Router basename={'/react-sites/react-start-bootstrap'}>
 
 .htaccess

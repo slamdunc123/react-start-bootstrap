@@ -15,7 +15,7 @@ const Analytics = () => {
 					</h3>
 				</div>
 
-				<Router basename={'/react-sites/react-start-bootstrap'}>
+				<Router>
 					<div className='mb-4'>
 						<Link
 							to='/doughnut'
