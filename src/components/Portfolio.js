@@ -1,6 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Portfolio = ({ portfolioLinks }) => {
+	const [categories, setCategories] = useState(portfolioLinks);
+
+	const handleCategorySelector = (e) => {
+		const value = e.target.getAttribute('id');
+		console.log(value);
+		if (value === 'all') {
+			setCategories(portfolioLinks);
+		} else {
+			const filtered = portfolioLinks.filter(
+				(item) => item.type == value
+			);
+			setCategories(filtered);
+		}
+	};
+
+	const getCategoryButtons = () => {
+		const distinctCategories = [
+			...new Set(portfolioLinks.map((item) => item.type)),
+		];
+
+		return (
+			<>
+				{console.log(categories)}
+				<button
+					id='all'
+					className='btn btn-primary m-1 mb-5'
+					onClick={handleCategorySelector}
+				>
+					All
+				</button>
+				{distinctCategories.map((item) => (
+					<button
+						id={item}
+						className='btn btn-primary m-1 mb-5'
+						onClick={handleCategorySelector}
+					>
+						{item}
+					</button>
+				))}
+			</>
+		);
+	};
+
 	return (
 		<section className='page-section bg-light' id='portfolio'>
 			<div className='container'>
@@ -11,13 +54,16 @@ const Portfolio = ({ portfolioLinks }) => {
 					<h3 className='section-subheading text-muted'>
 						Lorem ipsum dolor sit amet consectetur.
 					</h3>
+
+					{getCategoryButtons()}
 				</div>
 				<div className='row'>
-					{portfolioLinks &&
-						portfolioLinks.map(({ title, caption }, index) => {
+					{console.log(categories)}
+					{categories &&
+						categories.map(({ title, caption }, index) => {
 							return (
 								<div className='col-lg-4 col-sm-6 mb-4'>
-									<div className='portfolio-item'>
+									<div className='portfolio-item animate__animated animate__fadeIn'>
 										<a
 											className='portfolio-link'
 											data-toggle='modal'

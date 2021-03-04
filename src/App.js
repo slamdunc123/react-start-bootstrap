@@ -16,30 +16,37 @@ function App() {
 		{
 			title: 'Threads',
 			caption: 'Illustration',
+			type: 1,
 		},
 		{
 			title: 'Explore',
 			caption: 'Graphic Design',
+			type: 2,
 		},
 		{
 			title: 'Finish',
 			caption: 'Identity',
+			type: 2,
 		},
 		{
 			title: 'Lines',
 			caption: 'Branding',
+			type: 3,
 		},
 		{
 			title: 'Southwest',
 			caption: 'Website Design',
+			type: 3,
 		},
 		{
 			title: 'Window',
 			caption: 'Photography',
+			type: 3,
 		},
 		{
 			title: 'Pizza',
 			caption: 'I love pizza!',
+			type: 4,
 		},
 	];
 
